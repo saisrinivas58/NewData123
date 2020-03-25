@@ -6,7 +6,7 @@ if  ([version]::IsNullOrEmpty)
     echo "No tag present."
     echo "Creating tag: $NEW_TAG"
     git tag $NEW_TAG
-    git push --tags -f
+    git push --tags
     echo "Tag created and pushed: $NEW_TAG"
   
 }
